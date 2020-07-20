@@ -16,6 +16,6 @@ test_images = test_images/255.0
 plt.imshow(train_images[7], cmap=plt.cm.binary)
 plt.show()
 
-model - keras.Sequential([
-
+model = keras.Sequential([
+    keras.layers.Flatten(input_shape=(28,28))
 ])
