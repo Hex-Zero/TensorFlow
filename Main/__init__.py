@@ -17,5 +17,6 @@ plt.imshow(train_images[7], cmap=plt.cm.binary)
 plt.show()
 
 model = keras.Sequential([
-    keras.layers.Flatten(input_shape=(28,28))
+    keras.layers.Flatten(input_shape=(28,28)),
+    keras.layers.Dense(128, activation="relu"),
 ])
